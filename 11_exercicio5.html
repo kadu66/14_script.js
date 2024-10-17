@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    //solicitar o preço do produto
+    let precoProduto = 
+        prompt("Digite o preço:");
+    //converte para decimal    
+    precoProduto=parseFloat(precoProduto);
+    //calcula 10% de desconto
+    let desconto = precoProduto * 0.1;
+    //calcula o preco a vista
+    let precoAVista = precoProduto - desconto;
+    //calcula o valor das parcelas em 3x
+    let valorParcela = precoProduto/3;
+    //mostra na tela as opções de pagamento
+    alert("Opções de pagamento:\n"+
+        "- À vista com 10% de desconto: R$"+
+        precoAVista.toFixed(2) + "\n" +
+        "- Em 3x de R$"+valorParcela.toFixed(2));
+</script>

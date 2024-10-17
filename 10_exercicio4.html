@@ -1,0 +1,19 @@
+<meta  charset="UTF-8">
+<script>
+    //solicitar o valor total da conta
+    let valorTotal = 
+        prompt("Valor total da conta (R$):");
+    //converte em decimal
+    valorTotal = parseFloat(valorTotal);
+    //solicitar a qtde de clientes
+    let numeroClientes = 
+        prompt("Digite a qtde de clientes:");
+    //converter em inteiro
+    numeroClientes = parseInt(numeroClientes);
+    //calcula o valor por cliente
+    let valorPorCliente = 
+        valorTotal/numeroClientes;
+    //exibe o resultado por cliente
+    alert("Valor por cliente: R$" + 
+        valorPorCliente.toFixed(2));
+</script>
